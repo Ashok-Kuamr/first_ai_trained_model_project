@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine Web App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Teachable Machine Web App</h1>
+
+    <!-- Webcam Stream -->
+    <video id="webcam" autoplay playsinline></video>
+    <br>
+    
+    <!-- Capture Button -->
+    <button onclick="captureImage()" id="captureBtn">Capture & Predict</button>
+    
+    <!-- Captured Image Preview -->
+    <canvas id="canvas"></canvas>
+    
+    <!-- Prediction Result -->
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
